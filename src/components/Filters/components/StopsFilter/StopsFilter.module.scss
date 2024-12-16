@@ -1,0 +1,65 @@
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.customCheckbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+
+  span {
+    color: #333;
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    margin-right: 10px;
+    cursor: pointer;
+    transition:
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+
+    &:checked {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+
+    &:checked::before {
+      content: "✔";
+      display: block;
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      line-height: 18px;
+    }
+  }
+
+  label {
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+}
+
+.onlyButton {
+  color: #0056b3;
+  border: none;
+  margin-left: auto;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0;
+}

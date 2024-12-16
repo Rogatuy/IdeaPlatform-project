@@ -1,0 +1,69 @@
+/* Сброс всех отступов и поля */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Убираем стандартные стили для ссылок и списков */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* Убираем дефолтные стили для таблиц */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Убираем дефолтные стили для формы */
+input,
+textarea,
+button,
+select {
+  outline: none;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Устанавливаем стандартные шрифты */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.5;
+}
+
+/* Убираем стандартный стиль у изображений */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Убираем отступы и поля у некоторых элементов */
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Обнуляем стили для блока */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* Убираем стили для ввода данных в формы */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

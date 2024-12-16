@@ -1,0 +1,43 @@
+@use "./config/reset.scss";
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  padding: 100px 120px;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+}
+
+.page-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+.filters {
+  width: 420px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  width: 100%;
+}
+
+.filters-container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.filter-group {
+  margin-bottom: 10px;
+}
+
+.filter-group label {
+  display: flex;
+  font-size: 14px;
+}
